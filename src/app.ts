@@ -4,4 +4,8 @@ const app = express();
 
 app.use(express.json());
 
-app.use()
+import userRouter from './router/userRouter';
+
+app.use('/api/', userRouter);
+
+export default app;
